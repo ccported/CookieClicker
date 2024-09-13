@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- external (gtag) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJDL65P9Y4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DJDL65P9Y4');
+</script>
+
 <!-- external -->
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"//orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"//orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
@@ -10,7 +20,7 @@
 
 <!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
 <link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
+<meta name = "description" content = "Cookie clicker V2.052, ported to different domains to prevent organization unblocking tools from blocking it. Cookie clicker is a fun game where you click cookies. Lots and lots of cookies.">
 
 <!-- /external -->
 
@@ -28,6 +38,9 @@ Feel free to alter this code to your liking, but please do not re-host it, do no
 var VERSION=2.052;
 var BETA=0;
 var App=typeof App==='undefined'?0:App;
+</script>
+<script>
+document.querySelector("title").innerHTML += " " + VERSION;
 </script>
 
 <link href="style.css?v=9" rel="stylesheet" type="text/css">
